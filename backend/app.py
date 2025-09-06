@@ -15,9 +15,7 @@ def create_app():
     )
 
     app.register_blueprint(controllers_bp)
-    return app
-
-app = create_app()
-
+    
 if __name__ == '__main__':
-    app.run(debug=True)
+    port = int(os.environ.get("PORT", 5000))  # Railway asigna el puerto
+    app.run(host='0.0.0.0', port=port)        # host 0.0.0.0 para acceso público
