@@ -1,0 +1,12 @@
+# Entorno virtual
+venv/
+
+# Python cache
+**/__pycache__/
+*.py[cod]
+
+# Editor config
+.vscode/
+
+# Jupyter notebook checkpoints
+analysis/.ipynb_checkpoints/
